@@ -4,7 +4,8 @@ module.exports = {
 	theme: {
 		extend: {
 			colors: {
-				chartreuse: '#E1F16B;'
+				chartreuse: '#E1F16B;',
+				charcoal: '#1A1D1F;'
 			}
 		},
 		fontFamily: {

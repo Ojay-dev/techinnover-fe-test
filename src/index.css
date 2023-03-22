@@ -45,4 +45,12 @@
 		background-position: calc(100% / 3) calc(100% / 3),
 			/* position of vertical lines */ calc(100% / 3) calc(100% / 3); /* position of horizontal lines */
 	}
+
+	@media screen and (max-width: 768px) {
+		.pattern {
+			background-size: 100px 100px;
+			background-position: calc(100% / 2) calc(100% / 2),
+				/* position of vertical lines */ calc(100% / 2) calc(100% / 2); /* position of horizontal lines */
+		}
+	}
 }
