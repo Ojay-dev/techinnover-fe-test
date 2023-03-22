@@ -7,7 +7,7 @@ export default function NavBar() {
 				<img src={LOGO} alt="logo" />
 			</a>
 
-			<ul className="flex gap-x-[100%] font-text text-[19px] leading-5 text-white">
+			<ul className="flex flex-col gap-x-[100%] font-text text-[19px] leading-5 text-white lg:flex-row">
 				<li>
 					<a href="#">Features</a>
 				</li>

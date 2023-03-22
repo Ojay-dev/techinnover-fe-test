@@ -5,7 +5,12 @@ module.exports = {
 		extend: {
 			colors: {
 				chartreuse: '#E1F16B;',
-				charcoal: '#1A1D1F;'
+				charcoal: '#1A1D1F;',
+				'slate-grey': '#6F767E;'
+			},
+			backgroundImage: {
+				'pattern-vector': "url('./src/assets/images/pattern-vector.svg')"
+				// 'footer-texture': "url('/img/footer-texture.png')"
 			}
 		},
 		fontFamily: {
