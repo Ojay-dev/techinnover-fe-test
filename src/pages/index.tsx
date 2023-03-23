@@ -115,7 +115,7 @@ export default function Home() {
 					</a>
 				</div>
 
-				<div className="flex justify-center bg-[#111315] px-20 pt-28 pb-20 lg:w-1/2">
+				<div className="flex justify-center bg-[#111315] px-10 pt-28 pb-20 lg:w-1/2">
 					<img src={statsIllustration} alt="stats" />
 				</div>
 			</div>
