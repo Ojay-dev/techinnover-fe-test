@@ -1,7 +1,14 @@
+import { useState } from 'react';
 import LOGO from '../assets/svgs/LOGO.svg';
 import menuIcon from '../assets/svgs/menu-icon.svg';
 
 export default function NavBar() {
+	const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
+
+	const handleMenuToggle = () => {
+		setIsMenuOpen(!isMenuOpen);
+	};
+
 	return (
 		<nav className="flex max-w-screen-2xl justify-between px-[10%] py-6 md:items-center lg:mx-auto lg:ml-auto lg:w-full lg:px-[5%] 2xl:px-0">
 			<a href="#">
@@ -33,9 +40,9 @@ export default function NavBar() {
 				</a>
 			</div>
 
-			<a href="#" className="block md:hidden">
+			<button className="block md:hidden" onClick={handleMenuToggle}>
 				<img src={menuIcon} alt="menu icon" />
-			</a>
+			</button>
 		</nav>
 	);
 }
