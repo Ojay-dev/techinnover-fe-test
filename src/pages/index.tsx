@@ -153,7 +153,7 @@ export default function Home() {
 					</p>
 				</div>
 
-				<div className="artist-images">
+				<div className="artist-images mx-auto max-w-screen-2xl">
 					<img src={wiz} alt="wiz" className="artist" />
 					<img src={burna} alt="burna" className="artist" />
 					<img src={tiwa} alt="tiwa" className="artist" />

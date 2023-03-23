@@ -3,7 +3,7 @@ import menuIcon from '../assets/svgs/menu-icon.svg';
 
 export default function NavBar() {
 	return (
-		<nav className="flex  max-w-screen-2xl justify-between px-[10%] py-6 md:items-center lg:ml-auto lg:w-full lg:px-[5%]">
+		<nav className="flex max-w-screen-2xl justify-between px-[10%] py-6 md:items-center lg:mx-auto lg:ml-auto lg:w-full lg:px-[5%] 2xl:px-0">
 			<a href="#">
 				<img src={LOGO} alt="logo" />
 			</a>
