@@ -15,7 +15,9 @@ module.exports = {
 		},
 		fontFamily: {
 			heading: ['Druk Wide Bold', 'sans-serif'],
-			text: ['Product Sans', 'sans-serif']
+			text: ['Product Sans', 'sans-serif'],
+			'clash-display': ['Clash Display', 'sans-serif'],
+			'integral-CF': ['Integral CF', 'sans-serif']
 		}
 	},
 	plugins: []

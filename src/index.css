@@ -13,6 +13,16 @@
 		src: url('./assets/fonts/Product-Sans-Regular.ttf') format('truetype');
 	}
 
+	@font-face {
+		font-family: 'Clash Display';
+		src: url('./assets/fonts/ClashDisplay-Medium.otf') format('opentype');
+	}
+
+	@font-face {
+		font-family: 'Integral CF';
+		src: url('./assets/fonts/IntegralCF-Regular.otf') format('opentype');
+	}
+
 	html {
 		/* font-family: 'Manrope', sans-serif; */
 	}
@@ -76,6 +86,93 @@
 
 	.images-container > img {
 		@apply h-40 w-40 object-cover;
+	}
+
+	.fanbase-section::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 50%;
+		bottom: 0;
+		background: linear-gradient(
+			90deg,
+			#111315 0%,
+			rgba(17, 19, 21, 0.8604) 34.76%,
+			rgba(17, 19, 21, 0.397736) 74.56%,
+			rgba(17, 19, 21, 0) 98.65%
+		);
+		z-index: 2;
+	}
+
+	.fanbase-section::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 50%;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(
+			90deg,
+			#111315 0%,
+			rgba(17, 19, 21, 0.8604) 34.76%,
+			rgba(17, 19, 21, 0.397736) 74.56%,
+			rgba(17, 19, 21, 0) 98.65%
+		);
+		transform: rotate(180deg);
+		z-index: 2;
+	}
+
+	.artist-images {
+		@apply relative mt-24 flex h-[25vh] w-full justify-between gap-x-16 lg:h-[40vh];
+	}
+
+	.artist {
+		@apply flex h-[150px] w-[150px] items-center justify-center rounded-full lg:h-[220px] lg:w-[220px];
+	}
+
+	.artist:nth-child(odd) {
+		align-self: flex-end;
+		animation: move-odd 25s infinite;
+	}
+
+	.artist:nth-child(even) {
+		align-self: flex-end;
+		animation: move-even 25s infinite;
+	}
+
+	@keyframes move-odd {
+		0% {
+			/* transform: translateX(-100%); */
+			transform: translateY(50%);
+		}
+
+		50% {
+			/* transform: translateX(100%); */
+			transform: translateY(-50%);
+		}
+
+		100% {
+			/* transform: translateX(-100%); */
+			transform: translateY(50%);
+		}
+	}
+
+	@keyframes move-even {
+		0% {
+			/* transform: translateX(-100%); */
+			transform: translateY(-50%);
+		}
+
+		50% {
+			/* transform: translateX(100%); */
+			transform: translateY(50%);
+		}
+
+		100% {
+			/* transform: translateX(-100%); */
+			transform: translateY(-50%);
+		}
 	}
 
 	@media screen and (max-width: 768px) {
