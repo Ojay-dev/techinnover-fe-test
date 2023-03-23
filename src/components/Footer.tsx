@@ -61,8 +61,8 @@ export default function Footer() {
 				</div>
 			</div>
 
-			<div className="flex flex-col-reverse justify-between lg:flex-row">
-				<div className="mt-4 flex items-center font-integral-CF tracking-[.48em] lg:mt-0 lg:w-3/5">
+			<div className="flex flex-col-reverse justify-between gap-y-10 lg:flex-row">
+				<div className="flex items-center font-integral-CF tracking-[.48em] lg:mt-0 lg:w-3/5">
 					<p className="text-[9px] uppercase leading-[11px] text-slate-grey">
 						2022
 					</p>
@@ -75,7 +75,7 @@ export default function Footer() {
 					</p>
 				</div>
 
-				<ul className="flex flex-col justify-between gap-y-2 font-integral-CF text-[9px] uppercase leading-[11px]  tracking-[.48em] text-slate-grey sm:flex-row lg:w-2/5">
+				<ul className="flex flex-col justify-between gap-y-6 font-integral-CF text-[9px] uppercase leading-[11px]  tracking-[.48em] text-slate-grey sm:flex-row lg:w-2/5">
 					<li>
 						<a href="#">TERMS & CONDITIONS</a>
 					</li>
