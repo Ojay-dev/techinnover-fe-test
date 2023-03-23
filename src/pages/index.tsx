@@ -20,7 +20,7 @@ export default function Home() {
 		<>
 			<div className="pattern ">
 				<NavBar />
-				<div className="relative mx-auto min-h-screen max-w-screen-2xl overflow-hidden px-[10%] pt-20 lg:ml-[5%] lg:justify-between xl:flex xl:w-full xl:px-0 2xl:mx-auto">
+				<div className=" mx-auto min-h-screen max-w-screen-2xl overflow-hidden px-[10%] pt-20 lg:ml-[5%] lg:justify-between xl:flex xl:px-0 2xl:mx-auto">
 					<div className="mt-3.5 text-white xl:w-1/2 2xl:xl:ml-0">
 						<h1 className="font-heading text-[38px] uppercase leading-[52px] sm:text-[54px] sm:leading-[76px]">
 							An innovative platform that <br />
@@ -31,7 +31,7 @@ export default function Home() {
 							</span>
 						</h1>
 
-						<p className="mt-[10px] w-full max-w-lg font-text text-[19px] leading-8 xl:max-w-lg">
+						<p className="mt-[10px] w-full  max-w-lg font-text text-[19px] leading-8">
 							Figma files can also be downloaded from our store. These files
 							include the latest Figma features and are
 						</p>
@@ -46,19 +46,19 @@ export default function Home() {
 						</a>
 					</div>
 
-					<div className="mt-20  xl:mt-0 xl:w-1/2">
+					<div className="relative mt-20  xl:mt-0 xl:w-1/2">
+						<img src={frame2} alt="frame2" className="ml-auto" />
 						<img
 							src={frame1}
 							alt="frame1"
-							className="xl:absolute xl:top-[40%] xl:right-[40%]"
+							className="lg:-ml-[50px] xl:absolute xl:top-[40%] "
 						/>
-						<img src={frame2} alt="frame2" className="ml-auto  sm:block" />
 					</div>
 				</div>
 			</div>
 
 			<div className="m-auto max-w-screen-2xl gap-x-[10%] px-[10%] pt-20 pb-16 lg:ml-[5%] lg:mr-auto lg:flex lg:pl-0  xl:ml-[3%] xl:px-0 2xl:mx-auto ">
-				<div className="flex justify-center lg:w-1/2">
+				<div className="flex justify-center lg:w-1/2 lg:justify-start">
 					<img src={image2} alt="image2" />
 				</div>
 
@@ -90,7 +90,7 @@ export default function Home() {
 			</div>
 
 			<div className="flex flex-col lg:flex-row">
-				<div className="bg-chartreuse bg-[url('src/assets/svgs/pattern-vector.svg')] bg-repeat px-[10%] pt-24 pb-16 lg:w-1/2 lg:pl-[5%]">
+				<div className="vector-pattern bg-chartreuse bg-repeat px-[10%] pt-24 pb-16 lg:w-1/2 lg:pl-[5%]">
 					<h2 className="font-heading text-[38px] leading-[52px] text-charcoal xl:w-9/12">
 						USE YOUR STATS TO MAKE MOVES
 					</h2>

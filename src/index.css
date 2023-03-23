@@ -56,8 +56,12 @@
 			/* position of vertical lines */ calc(100% / 3) calc(100% / 3); /* position of horizontal lines */
 	}
 
+	.vector-pattern {
+		background: url('./assets/svgs/pattern-vector.svg');
+	}
+
 	.gradient-blend {
-		background: url('src/assets/images/tems.png');
+		background: url('./assets/images/tems.png');
 		background-size: cover;
 		background-position: center;
 		overflow: hidden;
