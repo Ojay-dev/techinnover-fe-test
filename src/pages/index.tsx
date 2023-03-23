@@ -31,7 +31,7 @@ export default function Home() {
 							</span>
 						</h1>
 
-						<p className="mt-[10px] w-full font-text text-[19px] leading-8 xl:max-w-lg">
+						<p className="mt-[10px] w-full max-w-lg font-text text-[19px] leading-8 xl:max-w-lg">
 							Figma files can also be downloaded from our store. These files
 							include the latest Figma features and are
 						</p>

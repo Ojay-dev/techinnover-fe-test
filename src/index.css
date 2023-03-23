@@ -81,11 +81,38 @@
 	}
 
 	.images-container {
-		@apply absolute right-0 bottom-0 z-[0] flex items-end justify-start gap-x-8;
+		@apply absolute right-0 bottom-0 z-[0] flex items-end justify-start gap-x-8 overflow-hidden;
 	}
 
 	.images-container > img {
 		@apply h-40 w-40 object-cover;
+		animation: carousel 10s infinite;
+	}
+
+	@keyframes carousel {
+		0% {
+			transform: translateX(0);
+		}
+
+		20% {
+			transform: translateX(-150px);
+		}
+
+		40% {
+			transform: translateX(-300px);
+		}
+
+		60% {
+			transform: translateX(-450px);
+		}
+
+		80% {
+			transform: translateX(-600px);
+		}
+
+		100% {
+			transform: translateX(-750px);
+		}
 	}
 
 	.fanbase-section::before {
@@ -133,12 +160,12 @@
 
 	.artist:nth-child(odd) {
 		align-self: flex-end;
-		animation: move-odd 25s infinite;
+		animation: move-odd 20s infinite;
 	}
 
 	.artist:nth-child(even) {
 		align-self: flex-end;
-		animation: move-even 25s infinite;
+		animation: move-even 20s infinite;
 	}
 
 	@keyframes move-odd {
